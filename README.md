@@ -9,7 +9,12 @@ Download from the following Google Drive link: https://drive.google.com/drive/fo
 ## Requirements:
 - Create a new Python virtual environment 
 - Install the dependencies via `pip install -r requirements.txt`
-- We used TRC as our downstream compression as explained in the paper. It can be installed through the link: https://github.com/powturbo/Turbo-Range-Coder 
+- We used TRC as our downstream compression as explained in the paper. It can be installed through the link: https://github.com/powturbo/Turbo-Range-Coder
+- Compile for TRC:
+        Download or clone TurboRC
+	      git clone --recursive https://github.com/powturbo/Turbo-Range-Coder.git
+	      cd Turbo-Range-Coder
+        make
 
 ## Our method: HIRE
 - Located in `hier.py`
