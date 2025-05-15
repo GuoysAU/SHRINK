@@ -16,8 +16,6 @@ Download from the following Google Drive link: https://drive.google.com/drive/fo
         cd Turbo-Range-Coder<br>
         make<br>
 
-# Test
-
 ## Our method: HIRE
 - Located in `hier.py`
 - `HierarchicalSketch` class implements univariate HIRE
