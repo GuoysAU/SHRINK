@@ -9,14 +9,7 @@ Download from the following Google Drive link: https://drive.google.com/drive/fo
 ## Requirements:
 - Create a new Python virtual environment 
 - Install the dependencies via `pip install -r requirements.txt`
-- We used TRC as our downstream compression as explained in the paper. It can be installed through the link: https://github.com/powturbo/Turbo-Range-Coder
-- Compile for TRC:<br>
-        Download or clone TurboRC<br>
-	git clone --recursive https://github.com/powturbo/Turbo-Range-Coder.git<br>
-        cd Turbo-Range-Coder<br>
-        make<br>
-
-# Test
+- We used TRC as our downstream compression as explained in the paper. It can be installed through the link: https://github.com/powturbo/Turbo-Range-Coder 
 
 ## Our method: HIRE
 - Located in `hier.py`
@@ -39,14 +32,24 @@ Detailed comments explaining the correspondence beteween parts of the code and t
 4) To run the experiments comparing the different error functions at various levels of the hierarchy, run `python3 experiments_other_errs.py`
 
 # Citation
-If you use SHRINK in your paper, please use the following citation:
+If you use HIRE in your paper, please use the following citation:
 
-`@inproceedings{sun2024shrink,
-  title={SHRINK: Data Compression by Semantic Extraction and Residuals Encoding},
-  author={Sun, Guoyou and Karras, Panagiotis and Zhang, Qi},
-  booktitle={2024 IEEE International Conference on Big Data (BigData)},
-  pages={650--659},
-  year={2024},
-  organization={IEEE}
+`@article{Barbarioli2023Hierarchical,
+author = {Barbarioli, Bruno and Mersy, Gabriel and Sintos, Stavros and Krishnan, Sanjay},
+title = {Hierarchical Residual Encoding for Multiresolution Time Series Compression},
+year = {2023},
+issue_date = {May 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {1},
+number = {1},
+url = {https://doi.org/10.1145/3588953},
+doi = {10.1145/3588953},
+abstract = {Data compression is a key technique for reducing the cost of data transfer from storage to compute nodes. Increasingly, modern data scales necessitate lossy compression techniques, where exactness is sacrificed for a smaller compressed representation. One challenge in lossy compression is that different applications may have different accuracy demands. Today's compression techniques struggle in this setting either forcing the user to compress at the strictest accuracy demand, or to re-encode the data at multiple resolutions. This paper proposes a simple, but effective multiresolution compression algorithm for time series data, where a single encoding can effectively be decompressed at multiple output resolutions. There are a number of benefits over current state-of-the-art techniques for time series compression. (1) The storage footprint of this encoding is smaller than re-encoding the data at multiple resolutions. (2) Similarly, the compression latency is generally smaller than re-encoding at multiple resolutions. (3) Finally, the decompression latency of our encoding is significantly faster than single encodings at the strictest accuracy demand.},
+journal = {Proc. ACM Manag. Data},
+month = {may},
+articleno = {99},
+numpages = {26},
+keywords = {compression, storage, temporal databases}
 }`
 
